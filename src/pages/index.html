@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hydrapp</title>
-    <meta name="description" content="Your project description" />
+    <meta name="description" content="Simple app to count water glass drunk during day" />
     <!-- Title -->
     <meta property="og:title" content />
     <!-- OPTIONAL description. 2-4 sentences. -->
@@ -155,9 +155,21 @@
     />
   </head>
   <body>
+    <header class="header">Pij wodę!</header>
+
     <div class="hello">
-      <img class="hello__logo" src="../assets/img/water-glass.svg" alt="Szklanka wody" />
-      <span class="hello__circles"></span>
+      
+      <img
+        class="hello__logo"
+        src="../assets/img/water-glass.svg"
+        alt="Szklanka wody"
+      />
+      <!-- <span class="hello__circles"></span> -->
+      
+    </div>
+    <div class="button">
+      <button class="button__add">dodaj szklankę</button>
+      <button class="button__remove">usuń szklankę</button>
     </div>
   </body>
 </html>
