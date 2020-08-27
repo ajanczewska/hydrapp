@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hydrapp</title>
-    <meta name="description" content="Simple app to count water glass drunk during day" />
+    <meta
+      name="description"
+      content="Simple app to count water glass drunk during the day"
+    />
     <!-- Title -->
-    <meta property="og:title" content />
+    <meta property="og:title" content="Hydrapp" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content />
+    <meta
+      property="og:description"
+      content="Aplikacja, która pozwoli Ci liczyć szklanki wody wypite w ciągu Twojego dnia."
+    />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content />
+    <meta property="og:url" content="" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <!--meta
+    <!-- <meta
       property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    -->
+      content="https://ajanczewska.com/hydrapp/src/assets/img/water-glass.svg"
+    > -->
 
     <!-- uncomment the line below to enable PWA  -->
     <link rel="manifest" href="manifest.json" />
@@ -155,17 +161,15 @@
     />
   </head>
   <body>
-    <header class="header">Pij wodę!</header>
-
-    <div class="hello">
-      
+      <header class="header">Pij wodę!</header>
+    <div class="water">
+      <p class="water__counter">10</p>
       <img
-        class="hello__logo"
+        class="water__img"
         src="../assets/img/water-glass.svg"
         alt="Szklanka wody"
       />
       <!-- <span class="hello__circles"></span> -->
-      
     </div>
     <div class="button">
       <button class="button__add">dodaj szklankę</button>

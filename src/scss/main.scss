@@ -20,16 +20,25 @@ body {
   line-height: 64px;
   padding: 87px 0 68px 0;
 }
-.counter {
-  position: absolute;
-  // visibility: hidden;
-  left: 38.13%;
-  right: 38.4%;
-  top: 39.04%;
-  bottom: 48.89%;
-  font-size: 112px;
-  line-height: 131px;
-  color: #000000;
+.water {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ text-align: center;
+  &__counter {
+    margin: 24px 0 0 0;
+    min-width: 88px;
+    min-height: 98px;
+    font-size: 112px;
+    color: #000000;
+    position: absolute;
+    
+    // visibility: hidden;
+    z-index: 10;
+  }
+  &__img {
+  }
 }
 .button {
   display: flex;
