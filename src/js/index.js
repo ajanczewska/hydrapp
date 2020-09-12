@@ -8,31 +8,40 @@ registerSW();
 
 console.log("HELLO 🚀");
 
-const counter = document.querySelector(".water__counter--js");
-const buttonAdd = document.querySelector(".add-js");
+const counter = document.querySelector(".glass__counter--js");
+const buttonAdd = document.querySelector(".add--js");
 const buttonRemove = document.querySelector(".remove--js");
 // const buttonStory = document.querySelector(".story--js");
-const key = new Date().toISOString().slice(0, 10);
+const key = new Date().toLocaleString().slice(0, 10);
 let count = 0;
 
-buttonAdd.addEventListener("click", () => {
-  if (!key) {
-    count = 0;
+const localStorageValue = localStorage.getItem(key);
 
-    counter.innerHTML = count;
-  } else {
-    count += 1;
-    counter.innerHTML = count;
-  }
+//sprawdzamy czy w local storage jest zapisana wartość
+//jeżeli nie jest zapisujemy wartość 0
+if (localStorageValue) {
+  count = localStorageValue
+}
+else{
+  localStorage.setItem(key, 0)
+}
+
+//zmieniamy element html na ilość szklanek zapisanych w local storage
+counter.innerHTML = count;
+
+buttonAdd.addEventListener("click", () => {
+  count++;
+  counter.innerHTML = count;
   localStorage.setItem(key, count);
 });
+
 buttonRemove.addEventListener("click", () => {
   if (count > 0) {
-    count -= 1;
-    counter.innerHTML = count;
+    count--;
   }
+  counter.innerHTML = count;
   localStorage.setItem(key, count);
 });
 // buttonStory.addEventListener("click", () => {
-    
+
 // });

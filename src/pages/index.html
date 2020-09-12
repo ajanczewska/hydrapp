@@ -6,7 +6,7 @@
     <title>Hydrapp</title>
     <meta
       name="description"
-      content="Simple app to count water glass drunk during the day"
+      content="Aplikacja, która liczy szklanki wody."
     />
     <!-- Title -->
     <meta property="og:title" content="Hydrapp" />
@@ -15,12 +15,12 @@
       property="og:description"
       content="Aplikacja, która pozwoli Ci liczyć szklanki wody wypite w ciągu Twojego dnia."
     />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <!-- full url with http(s) -->
+    <meta property="og:url" content="https://ajanczewska.github.io/hydrapp/" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <!-- <meta
       property="og:image"
-      content="https://ajanczewska.com/hydrapp/src/assets/img/water-glass.svg"
+      content=""
     > -->
 
     <!-- uncomment the line below to enable PWA  -->
@@ -162,17 +162,17 @@
   </head>
   <body>
       <header class="header">Pij wodę!</header>
-    <div class="water">
-      <p class="water__counter water__counter--js"></p>
+    <div class="glass">
+      <p class="glass__counter glass__counter--js">0</p>
       <img
-        class="water__img"
+        class="glass__img"
         src="../assets/img/water-glass.svg"
         alt="Szklanka wody"
       />
       <!-- <span class="hello__circles"></span> -->
     </div>
     <div class="button">
-      <button class="button__add add-js">dodaj szklankę</button>
+      <button class="button__add add--js">dodaj szklankę</button>
       <button class="button__remove remove--js">usuń szklankę</button>
       <!-- <button class="button__story story--js">zobacz historię</button> -->
     </div>
