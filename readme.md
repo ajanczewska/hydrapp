@@ -1,4 +1,4 @@
-![cover]()
+![cover](https://github.com/ajanczewska/hydrapp/blob/master/public/pwa/manifest-icon-192.png)
 
 # Hydrapp 
 
