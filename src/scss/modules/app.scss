@@ -1,51 +1,57 @@
 .header {
-    font-size: 55px;
-    line-height: 64px;
-    padding: 68px 0;
-    
+  font-size: 55px;
+  line-height: 64px;
+  padding: 68px 0;
+  @media screen and (max-height: 568px) {
+    font-size: 52px;
+    padding: 48px 0;
   }
-  .glass {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 280;
-    max-height: 210;
-    &__counter {
-      margin: 24px 0 0 0;
-      min-width: 88px;
-      min-height: 98px;
-      font-size: 112px;
-      color: #000000;
-      position: absolute;
-      text-align: center;
-      // visibility: hidden;
-      z-index: 10;
-    }
-    
+}
+.glass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 280px;
+  max-height: 210px;
+  &__counter {
+    margin: 24px 0 0 0;
+    min-width: 88px;
+    min-height: 98px;
+    font-size: 96px;
+    color: #000000;
+    position: absolute;
+    text-align: center;
+    // visibility: hidden;
+    z-index: 10;
   }
-  .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 48px;
-    &__add {
-      background: #ffffff;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 4px;
-      font-size: 18px;
-      line-height: 21px;
-      min-width: 216px;
-      min-height: 47px;
-    }
-    &__remove {
-      background: none;
-      border: none;
-      font-size: 14px;
-      line-height: 16px;
-      margin: 37px 0;
-      color: #f5e5e7;
-    }
+  &__img {
+    min-width: 280px;
+    min-height: 210px;
   }
   
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  &__add {
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    min-width: 216px;
+    min-height: 47px;
+  }
+  &__remove {
+    background: none;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 37px 0;
+    color: #f5e5e7;
+  }
+}
